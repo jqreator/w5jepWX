@@ -52,8 +52,8 @@ pressure = str(int(response_info["observations"][0]["imperial"]["pressure"] * 33
 wind_degrees = str(response_info["observations"][0]["winddir"])
 wind_mph = str(response_info["observations"][0]["imperial"]["windSpeed"]).rjust(3, '0')
 wind_gust_mph = str(response_info["observations"][0]["imperial"]["windGust"]).rjust(3, '0')
-precip_1hr_in = str(int(response_info["observations"][0]["imperial"]["precipRate"]) * 100).rjust(3, '0')
-precip_today_in = str(int(response_info["observations"][0]["imperial"]["precipTotal"]) * 100).rjust(3, '0')
+precip_1hr_in = str(format(response_info["observations"][0]["imperial"]["precipRate"], '.2f')).replace('.','')
+precip_today_in = str(format(response_info["observations"][0]["imperial"]["precipTotal"], '.2f')).replace('.','')
 
 #Build APRS WX packet
 aprswxpacket = address + "@" + str(time) + "z" + position + "_" + wind_degrees + "/" \
