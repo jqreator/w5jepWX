@@ -37,7 +37,7 @@ callsign = "CALLSIGN" #Replace with your callsign
 aprsPassword = "xxxxx" #Replace with your APRS password
 position = '0000.00N/00000.00W' #Long/Lat format is ddmm.hhN/dddmm.hhW - pay attention to formatting, may need a leading 0 on the lat value.
 address = callsign + ">APRS,TCPIP*:"
-identity = "user " + callsign + " pass " + aprsPassword + " vers KE5ZZNWX 1.0" + "\n"
+identity = "user " + callsign + " pass " + aprsPassword + " vers w5jepWX 1.1" + "\n"
 wuAPIkey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" #Replace with your Weather Underground API key
 wuEndpoint = "https://api.weather.com/v2/pws/observations/current?stationId=KTXPALES79&format=json&units=e&apiKey=" + wuAPIkey
 utc_datetime = datetime.datetime.now()
