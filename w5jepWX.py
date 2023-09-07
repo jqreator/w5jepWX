@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-#ke5zznWX v1.0
+#w5jepWX v1.1
 #Copyright (C)2022 Jacob Parks - jqreator at gmail dot com
 #
 #This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,8 @@
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 #Release notes:
-#v1.0.0 - Initial release
+#v1.0 - Initial release
+#v1.1 - Updated the name of the project to reflect the authors new callsign.
 
 #Retrieves weather station data from Weather Underground via API and upload via APRS
 #Weather Underground provides free API access for weather station contributers 
@@ -34,7 +35,7 @@ server = "cwop.aprs.net"
 port = 14580
 callsign = "CALLSIGN" #Replace with your callsign
 aprsPassword = "xxxxx" #Replace with your APRS password
-position = '0000.00N/00000.00W' #Long/Lat format is ddmm.hhN/dddmm.hhW
+position = '0000.00N/00000.00W' #Long/Lat format is ddmm.hhN/dddmm.hhW - pay attention to formatting, may need a leading 0 on the lat value.
 address = callsign + ">APRS,TCPIP*:"
 identity = "user " + callsign + " pass " + aprsPassword + " vers KE5ZZNWX 1.0" + "\n"
 wuAPIkey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" #Replace with your Weather Underground API key
