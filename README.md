@@ -9,3 +9,5 @@ Example cron job:
 */5 * * * * /home/w5jep/w5jepWX/w5jepWX.py >/dev/null 2>&1
 
 More information about APRS weather and CWOP can be found at http://www.wxqa.com
+
+#hamradio #aprs
